@@ -1,0 +1,35 @@
+{
+    "application": {
+        "id": "",
+        "title": "EPM Products",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#EPMProducts-Display",
+        "navigationComponentName": "FioriElementsListReport",
+        "intentSemanticObject": "EPMProducts",
+        "intentAction": "Display",
+        "html5ApplicationName": "fiorielementslistreport",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "8006ca3b-64e3-4900-abb5-b26d48c3b0b3"
+        ],
+        "contentPackages": [
+            "ec9898bd-7c26-45a4-a19e-9a47a47bfa4e"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "DynamicTile",
+        "title": "EPM Products",
+        "subtitle": "",
+        "searchKeywords": "EPM Products,",
+        "displayIconUrl": "sap-icon://product",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "/sap/fiori/fiorielementslistreport/sap/opu/odata/sap/SEPMRA_PROD_MAN/SEPMRA_C_PD_Product/$count",
+        "refreshInterval": "360",
+        "displayNumberUnit": "Products"
+    }
+}

@@ -107,7 +107,22 @@
 			}
 		},
 		"extends": {
-			"extensions": {}
+			"extensions": {
+				"sap.ui.viewExtensions": {
+					"sap.suite.ui.generic.template.ListReport.view.ListReport": {
+						"SmartFilterBarControlConfigurationExtension|SEPMRA_C_PD_Product": {
+							"className": "sap.ui.core.Fragment",
+							"fragmentName": "FioriElementsListReport.ext.fragment.Customfilter",
+							"type": "XML"
+						}
+					}
+				},
+				"sap.ui.controllerExtensions": {
+					"sap.suite.ui.generic.template.ListReport.view.ListReport": {
+						"controllerName": "FioriElementsListReport.ext.controller.ListReportExt"
+					}
+				}
+			}
 		},
 		"contentDensities": {
 			"compact": true,

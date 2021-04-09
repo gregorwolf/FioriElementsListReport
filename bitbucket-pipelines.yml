@@ -15,7 +15,7 @@ pipelines:
           - npm install
           - echo $CERTIFICATE > server.cer
           - export NODE_EXTRA_CA_CERTS=./server.cer
-          - cat ./server.cer
+          - cat $NODE_EXTRA_CA_CERTS
           - npm run deploy
         caches:
           - node

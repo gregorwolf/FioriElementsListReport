@@ -1,0 +1,19 @@
+image: node:12
+
+pipelines:
+  default:
+    - step:
+        name: Build
+        caches:
+          - node
+        script:
+          - npm install
+          - npm run build
+    - step:
+        name: Deploy
+        script:
+          - npm install
+          - npm run deploy
+        caches:
+          - node
+
